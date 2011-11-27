@@ -1,0 +1,8 @@
+<marathon>
+<interface>
+<vidmaster stringset_index="9998" />
+</interface>
+<stringset index="9998">
+<string index="0"></string>
+</stringset>
+</marathon>

@@ -1,0 +1,690 @@
+<marathon>
+
+<!-- IF YOU'RE GONNA PLAY AROUND WITH THIS FILE -->
+<!-- MAKE SURE TO USE A COPY -->
+
+<!-- STR# Resource: "Filenames" -->
+<stringset index="129">
+<string index="0">M1A1 Shapes.shpA</string>
+<string index="1">M1A1 Shapes.16</string>
+<string index="2">M1A1 Sounds.sndA</string>
+<string index="3">M1A1 Sounds.16</string>
+<string index="4">M1A1 Preferences</string>
+<string index="5">M1A1 Map.sceA</string>
+<string index="6">M1A1 Saved Game</string>
+<string index="7">M1A1</string>
+<string index="8">M1A1 Film</string>
+<string index="9">M1A1 Physics</string>
+<string index="10">M1A1 Music.ogg</string>
+<string index="11">M1A1 Images.imgA</string>
+<string index="12">M1A1 Movie</string>
+</stringset>
+
+<!-- STR# Resource: "Item names" -->
+<stringset index="150">
+<string index="0">FISTS</string>
+<string index="1">.44 MAGNUM MEGA CLASS</string>
+<string index="2">.44 MAGNUM MEGA CLASS</string>
+<string index="3">.44 CLIP (x8)</string>
+<string index="4">.44 CLIPS (x8)</string>
+<string index="5">ZEUS-CLASS FUSION PISTOL</string>
+<string index="6">FUSION BATTERY</string>
+<string index="7">FUSION BATTERIES</string>
+<string index="8">MA-75 ASSAULT RIFLE/GRENADE LAUNCHER</string>
+<string index="9">MA-75 CLIP (x52)</string>
+<string index="10">MA-75 CLIPS (x52)</string>
+<string index="11">MA-75 GRENADES (x7)</string>
+<string index="12">MA-75 GRENADES (x7)</string>
+<string index="13">SPNKR-X17 SSM LAUNCHER</string>
+<string index="14">SSM MISSILE (x2)</string>
+<string index="15">SSM MISSILES (x2)</string>
+<string index="16">ALIEN WEAPON</string>
+<string index="17">PIRATED COPLAND BETA</string>
+<string index="18">PIRATED COPLAND BETAS</string>
+<string index="19">TOZT-7 BACKPACK NAPALM UNIT</string>
+<string index="20">NAPALM CANISTER</string>
+<string index="21">NAPALM CANISTERS</string>
+<string index="22">POWERPC 620 CHIP</string>
+<string index="23">POWERPC 620 CHIPS</string>
+<string index="24">ALIEN ENERGY CONVERTER</string>
+<string index="25">WAVE MOTION CANNON</string>
+<string index="26">THE PLANS</string>
+<string index="27">PERFORMA 6400/200</string>
+<string index="28">PERFORMAS 6400/200</string>
+<string index="29">ALIEN ENERGY CONVERTER</string>
+<string index="30">ALIEN ENERGY CONVERTERS</string>
+<string index="31">DEFENSE CENTER REPAIR CHIP</string>
+<string index="32">DEFENSE CENTER REPAIR CHIPS</string>
+<string index="33">Durandal's Light Green Orb</string>
+<string index="34">ORB</string>
+<string index="35">Violet Orb</string>
+<string index="36">Yellow Orb</string>
+<string index="37">Brown Orb</string>
+<string index="38">Orange Orb</string>
+<string index="39">Blue Orb</string>
+<string index="40">Green Orb</string>
+<string index="41">WAVE MOTION CANNON</string>
+<string index="42">WAVE MOTION PACKET</string>
+<string index="43">WAVE MOTION PACKETS</string>
+</stringset>
+
+<!-- STR# Resource: "Item types" -->
+<stringset index="151">
+<string index="5">ORBS</string>
+</stringset>
+
+<!-- STR# Resource: "Weapon Names" -->
+<stringset index="137">
+<string index="0">FISTS</string>
+<string index="1">.44 MAGNUM MEGA CLASS</string>
+<string index="2">ZEUS-CLASS FUSION PISTOL</string>
+<string index="3">MA-75 ASSAULT RIFLE/ GRENADE LAUNCHER</string>
+<string index="4">SPNKR-X17 SSM LAUNCHER</string>
+<string index="5">TOZT-7 BACKPACK NAPALM UNIT</string>
+<string index="6">UNKNOWN WEAPON CLASS system error 0xfded</string>
+<string index="7">PERFORMA 6400/200</string>
+<string index="8">(somehow related to time of applicability)</string>
+<string index="9">WAVE MOTION CANNON</string>
+</stringset>
+
+<!-- STR# Resource: "Postgame network game stats" -->
+<stringset index="140">
+<string index="4">Time With Orb</string>
+</stringset>
+
+<!-- Coordinates for the main menu screen -->
+<interface>
+<rect index="7" top="145" left="251" bottom="173" right="387"/>
+<rect index="8" top="180" left="251" bottom="209" right="387"/>
+<rect index="9" top="211" left="117" bottom="237" right="237"/>
+<rect index="10" top="243" left="122" bottom="270" right="233"/>
+<rect index="11" top="277" left="142" bottom="302" right="212"/>
+<rect index="12" top="213" left="414" bottom="239" right="510"/>
+<rect index="13" top="246" left="422" bottom="272" right="504"/>
+<rect index="14" top="277" left="410" bottom="303" right="511"/>
+<rect index="15" top="362" left="297" bottom="390" right="343"/>
+<rect index="16" top="394" left="297" bottom="424" right="344"/>
+<rect index="17" top="222" left="265" bottom="295" right="371"/>
+<color index="5" red="0" green="0" blue="0"/>
+</interface>
+
+<!-- Use the VacBob collection for the MA75 and Aliengun torso sequences -->
+<player>
+<shape type="0" subtype="0" value="13"/>
+<shape type="2" subtype="3" value="26"/>
+<shape type="3" subtype="3" value="26"/>
+<shape type="4" subtype="3" value="27"/>
+<shape type="2" subtype="6" value="31"/>
+<shape type="3" subtype="6" value="31"/>
+<shape type="4" subtype="6" value="32"/>
+</player>
+
+<!-- Change weapons order-->
+<weapons>
+<order index="0" weapon="0"/>
+<order index="1" weapon="1"/>
+<order index="2" weapon="2"/>
+<order index="4" weapon="3"/>
+<order index="6" weapon="4"/>
+<order index="7" weapon="5"/>
+<order index="8" weapon="6"/>
+</weapons>
+
+<!-- Show MADDs and Tiny BOBs as friendly -->
+<motion_sensor>
+<assign monster="36" type="0"/>
+<assign monster="37" type="0"/>
+<assign monster="41" type="0"/>
+</motion_sensor>
+
+<!-- Allow player to pick up more than 1 uplink chip -->
+<items>
+<item index="25" maximum="3"/>
+</items>
+
+<!-- Turn wires into special switches and fix pfhor panels sounds-->
+<control_panels>
+<panel index="9" type="6" coll="17" active_frame="37" inactive_frame="38">
+<sound type="0" which="14"/>
+<sound type="1" which="-1"/>
+</panel>
+<panel index="19" type="6" coll="18" active_frame="36" inactive_frame="37">
+<sound type="0" which="14"/>
+<sound type="1" which="-1"/>
+</panel>
+<panel index="31" type="6" coll="19" active_frame="42" inactive_frame="43">
+<sound type="0" which="14"/>
+<sound type="1" which="-1"/>
+</panel>
+<panel index="33" type="2" coll="21" active_frame="2" inactive_frame="3">
+<sound type="0" which="4"/>
+<sound type="1" which="-1"/>
+</panel>
+<panel index="34" type="3" coll="21" active_frame="2" inactive_frame="3">
+<sound type="0" which="4"/>
+<sound type="1" which="-1"/>
+</panel>
+<panel index="38" type="7" coll="21" active_frame="4" inactive_frame="4">
+<sound type="0" which="-1"/>
+<sound type="1" which="-1"/>
+</panel>
+</control_panels>
+
+<!-- fix liquids colors in overhead map -->
+<overhead_map>
+<color index="6" red="0" green="1" blue="0"/>
+</overhead_map>
+
+<!-- Change liquids faders -->
+<faders>
+<fader index="17" type="0" initial_opacity=".8" final_opacity="0">
+<color red="1" green=".6" blue="0"/>
+</fader>
+<liquid index="1" fader="17" opacity=".8"/>
+<fader index="31" type="0" initial_opacity="0" final_opacity="0">
+</fader>
+<liquid index="2" fader="31" opacity="0"/>
+<fader index="19" type="0" initial_opacity=".7" final_opacity="0">
+<color red="0" green="1" blue="0"/>
+</fader>
+<liquid index="4" fader="19" opacity=".7"/>
+</faders>
+
+<!-- fix doors sounds -->
+<platforms>
+<platform index="1" start_extend="24" start_contract="25"/>
+<platform index="6" start_extend="191" start_contract="190"/>
+</platforms>
+
+<player_name>Mjolnir Recon 54</player_name>
+
+<!-- Use the VacBob Collection for the Orb item sequence -->
+<items>
+<item index="26" type="5">
+<shape >
+</shape>
+</item>
+<item index="27" type="5">
+<shape coll="13" seq="29">
+</shape>
+</item>
+<item index="28" type="5">
+<shape coll="13" seq="29">
+</shape>
+</item>
+<item index="29" type="5">
+<shape coll="13" seq="29">
+</shape>
+</item>
+<item index="30" type="5">
+<shape coll="13" seq="29">
+</shape>
+</item>
+<item index="31" type="5">
+<shape coll="13" seq="29">
+</shape>
+</item>
+<item index="32" type="5">
+<shape coll="13" seq="29">
+</shape>
+</item>
+<item index="33" type="5">
+<shape coll="13" seq="29">
+</shape>
+</item>
+</items>
+
+<animated_textures>
+
+<sequence coll="17" numticks="3">
+<frame index="0"/>
+<frame index="48"/>
+<frame index="49"/>
+<frame index="48"/>
+</sequence>
+
+<sequence coll="17" numticks="2">
+<frame index="2"/>
+<frame index="44"/>
+<frame index="45"/>
+<frame index="46"/>
+<frame index="47"/>
+<frame index="46"/>
+<frame index="45"/>
+<frame index="44"/>
+</sequence>
+
+<sequence coll="17" numticks="3">
+<frame index="4"/>
+<frame index="39"/>
+<frame index="40"/>
+<frame index="41"/>
+<frame index="42"/>
+<frame index="43"/>
+</sequence>
+
+<sequence coll="17" numticks="5">
+<frame index="37"/>
+<frame index="50"/>
+</sequence>
+
+<sequence coll="18" numticks="3">
+<frame index="0"/>
+<frame index="38"/>
+<frame index="39"/>
+<frame index="38"/>
+</sequence>
+
+<sequence coll="18" numticks="2">
+<frame index="2"/>
+<frame index="40"/>
+<frame index="41"/>
+<frame index="42"/>
+<frame index="43"/>
+<frame index="42"/>
+<frame index="41"/>
+<frame index="40"/>
+</sequence>
+
+<sequence coll="18" numticks="3">
+<frame index="4"/>
+<frame index="44"/>
+<frame index="45"/>
+<frame index="46"/>
+<frame index="47"/>
+<frame index="48"/>
+</sequence>
+
+<sequence coll="19" numticks="3">
+<frame index="0"/>
+<frame index="44"/>
+<frame index="45"/>
+<frame index="44"/>
+</sequence>
+
+<sequence coll="19" numticks="2">
+<frame index="2"/>
+<frame index="46"/>
+<frame index="47"/>
+<frame index="48"/>
+<frame index="49"/>
+<frame index="48"/>
+<frame index="47"/>
+<frame index="46"/>
+</sequence>
+
+<sequence coll="19" numticks="3">
+<frame index="4"/>
+<frame index="50"/>
+<frame index="51"/>
+<frame index="52"/>
+<frame index="53"/>
+<frame index="54"/>
+</sequence>
+
+<sequence coll="19" numticks="3">
+<frame index="57"/>
+<frame index="58"/>
+<frame index="59"/>
+<frame index="60"/>
+<frame index="61"/>
+<frame index="62"/>
+</sequence>
+
+<sequence coll="21" numticks="3">
+<frame index="0"/>
+<frame index="37"/>
+<frame index="38"/>
+<frame index="39"/>
+</sequence>
+
+<sequence coll="21" numticks="2">
+<frame index="2"/>
+<frame index="40"/>
+<frame index="41"/>
+<frame index="42"/>
+</sequence>
+
+<sequence coll="21" numticks="18">
+<frame index="4"/>
+<frame index="43"/>
+<frame index="44"/>
+<frame index="45"/>
+<frame index="46"/>
+<frame index="47"/>
+<frame index="48"/>
+<frame index="49"/>
+<frame index="4"/>
+<frame index="46"/>
+<frame index="45"/>
+<frame index="44"/>
+<frame index="43"/>
+</sequence>
+
+</animated_textures>
+
+<opengl>
+<texture coll="6" bitmap="0" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="1" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="2" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="3" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="4" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="5" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="6" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="7" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="8" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="9" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="10" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="11" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="12" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="13" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="14" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="15" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="16" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="17" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="18" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="19" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="20" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="21" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="22" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="23" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="24" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="25" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="26" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="27" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="28" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="29" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="30" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="31" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="32" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="33" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="34" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="35" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="36" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="37" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="38" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="39" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="40" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="41" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="42" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="43" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="44" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="45" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="46" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="47" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="48" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="49" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="60" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="61" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="62" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="63" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="64" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="65" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="66" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="67" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="68" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="69" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="70" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="71" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="72" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="73" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="74" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="90" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="91" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="92" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="93" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="94" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="95" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="96" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="97" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="98" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="99" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="100" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="101" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="102" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="103" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="104" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="105" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="106" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="107" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="108" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="109" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="110" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="111" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="112" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="113" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="114" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="115" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="116" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="117" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="118" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="119" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="120" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="121" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="122" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="123" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="124" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="125" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="126" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="127" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="128" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="129" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="130" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="131" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="132" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="133" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="134" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="135" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="136" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="137" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="141" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="142" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="143" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="147" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="148" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="149" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="153" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="154" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="155" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="156" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="157" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="158" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="159" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="160" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="161" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="162" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="163" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="164" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="165" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="166" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="167" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="168" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="169" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="170" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="171" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="172" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="173" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="174" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="175" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="176" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="177" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="178" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="184" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="185" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="186" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="187" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="188" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="195" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="196" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="197" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="198" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="199" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="200" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="201" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="202" opac_type="0" opac_scale="1"/>
+<texture coll="6" bitmap="203" opac_type="0" opac_scale="1"/>
+
+<texture coll="13" bitmap="0" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="1" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="2" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="3" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="4" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="5" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="6" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="7" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="8" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="9" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="10" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="11" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="12" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="13" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="14" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="15" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="16" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="17" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="18" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="19" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="20" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="21" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="22" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="23" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="24" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="25" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="26" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="27" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="28" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="29" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="30" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="31" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="32" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="33" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="34" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="35" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="36" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="37" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="38" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="39" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="40" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="41" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="42" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="43" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="44" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="45" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="46" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="47" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="48" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="49" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="60" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="61" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="62" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="63" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="64" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="65" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="66" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="67" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="68" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="69" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="70" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="71" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="72" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="73" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="74" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="90" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="91" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="92" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="93" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="94" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="95" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="96" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="97" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="98" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="99" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="100" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="101" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="102" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="103" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="104" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="105" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="106" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="107" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="108" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="109" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="110" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="111" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="112" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="113" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="114" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="115" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="116" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="117" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="118" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="119" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="120" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="121" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="122" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="123" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="124" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="125" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="126" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="127" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="128" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="129" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="130" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="131" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="132" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="133" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="134" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="135" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="136" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="137" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="141" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="142" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="143" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="147" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="148" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="149" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="153" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="154" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="155" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="156" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="157" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="158" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="159" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="160" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="161" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="162" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="163" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="164" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="165" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="166" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="167" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="168" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="169" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="170" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="171" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="172" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="173" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="174" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="175" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="176" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="177" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="178" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="184" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="185" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="186" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="187" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="188" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="195" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="196" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="197" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="198" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="199" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="200" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="201" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="202" opac_type="0" opac_scale="1"/>
+<texture coll="13" bitmap="203" opac_type="0" opac_scale="1"/>
+
+<texture coll="18" bitmap="12" opac_type="1" opac_scale="0.7"/>
+</opengl>
+
+</marathon>
