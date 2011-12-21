@@ -401,7 +401,12 @@ function Triggers.draw()
   
   -- chip
   if Player.items["uplink chip"].count > 0 then
-    drawBR(img.chipIndicator, -(img.chipIndicator.width / 2) - pos.chipOffset.x, pos.chipOffset.y - (img.chipIndicator.height / 2))
+    local cx = -(img.chipIndicator.width / 2) - pos.chipOffset.x
+    local cy = pos.chipOffset.y - (img.chipIndicator.height / 2)
+    for i = 1,Player.items["uplink chip"].count do
+      drawBR(img.chipIndicator, cx, cy)
+      cy = cy + img.chipIndicator.height
+    end
   end
   
 end
